@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React - Login</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <main class="container">
+        <form class="form-login">
+            <label for="email">
+                E-mail*
+                <input type="email" name="email" id="email" required>
+            </label>
+            <label for="senha">
+                Senha*
+                <input type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="A senha deve ter 8 caracteres ou mais, conter ao menos uma letra maiúscula e uma letra minúscula" name="senha" id="senha">
+            </label>
+            <button>Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
