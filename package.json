@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "git": "git add --all && git commit -m\"Deploy\" && git push origin master",
+    "dev": "npm run git && sass --watch assets/sass:assets/css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",
